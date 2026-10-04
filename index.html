@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf6">
+  <meta name="description" content="Thoughtful, hand-tied flowers for every day and every occasion. Fresh flowers, made with love and delivered by PooKadai.">
+  <title>Fresh Flowers Delivered | PooKadai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="home">
+  <div class="announcement">
+    <p>Little joys, delivered fresh <span aria-hidden="true">✳</span> Free delivery on orders over ₹1,499</p>
+  </div>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#home" aria-label="PooKadai home">poo<span>kadai</span><i aria-hidden="true">✿</i></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="market/index.html">Shop flowers</a>
+        <a href="#occasions">By occasion</a>
+        <a href="#story">Our little story</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" type="button" aria-label="Search flowers" aria-expanded="false" aria-controls="search-panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.4 4.4"></path></svg>
+        </button>
+        <a class="cart-link" href="market/cart.html" aria-label="Shopping bag, 0 items">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+          <span>Bag</span><span class="cart-count" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+    <div class="search-panel" id="search-panel" hidden>
+      <label for="flower-search">Find your flowers</label>
+      <input id="flower-search" type="search" placeholder="Try roses, sunshine, just because…" autocomplete="off">
+      <button class="search-close" type="button" aria-label="Close search">×</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Flowers for the feeling</p>
+        <h1 id="hero-title">A little more<br> <em>lovely,</em> every day.</h1>
+        <p class="hero-description">Thoughtful, hand-tied flowers to make ordinary days feel a little more like something.</p>
+        <a class="button button-dark" href="market/index.html">Find your flowers <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-flower" aria-hidden="true">✿</span><span>Picked fresh. Wrapped with care.<br>Delivered with a little extra love.</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Fresh yellow flowers growing in a sunlit garden">
+        <div class="hero-image"></div>
+        <div class="hero-sticker"><span>FLOWERS</span><b>make<br>everything<br>better</b><i aria-hidden="true">✳</i></div>
+        <span class="hero-scribble" aria-hidden="true">made with love ♡</span>
+      </div>
+      <a class="hero-scroll" href="#shop"><span>SCROLL A LITTLE</span><i aria-hidden="true">↓</i></a>
+    </section>
+
+    <section class="values-strip" aria-label="What makes PooKadai special">
+      <p><span aria-hidden="true">✳</span> Seasonal stems, always</p>
+      <p><span aria-hidden="true">♡</span> Arranged by hand</p>
+      <p><span aria-hidden="true">☼</span> Delivered with care</p>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A few current favourites</p>
+          <h2 id="shop-title">Good flowers, <em>good feelings.</em></h2>
+        </div>
+        <a class="text-link" href="market/flowers.html">See all the blooms <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="category-list" aria-label="Filter flowers">
+        <button class="category-chip is-active" type="button" data-filter="all" aria-pressed="true">All flowers</button>
+        <button class="category-chip" type="button" data-filter="bestseller" aria-pressed="false">Best sellers</button>
+        <button class="category-chip" type="button" data-filter="bright" aria-pressed="false">Bright & happy</button>
+        <button class="category-chip" type="button" data-filter="soft" aria-pressed="false">Soft & sweet</button>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="no-results" id="no-results" hidden>No blooms found for that search. Try another flower or feeling.</p>
+    </section>
+
+    <section class="occasion-section" id="occasions" aria-labelledby="occasion-title">
+      <div class="occasion-image" role="img" aria-label="A hand-tied bouquet of seasonal flowers"></div>
+      <div class="occasion-copy">
+        <p class="eyebrow">For the big things & the little ones</p>
+        <h2 id="occasion-title">There’s always<br>a reason to <em>send flowers.</em></h2>
+        <p>New beginnings, old friends, just-because Tuesdays. We’ve got a bunch for all of it.</p>
+        <a class="button button-outline" href="market/shops.html">Shop by occasion <span aria-hidden="true">↗</span></a>
+        <span class="occasion-doodle" aria-hidden="true">a good idea<br>for any day ↗</span>
+      </div>
+    </section>
+
+    <section class="story-section section-wrap" id="story" aria-labelledby="story-title">
+      <div class="story-copy">
+        <p class="eyebrow">A flower shop with a soft spot</p>
+        <h2 id="story-title">Small bunches.<br><em>Big heart.</em></h2>
+        <p>At PooKadai, we believe flowers don’t need a reason. We work with the season, choose every stem with care, and make each bunch by hand—so sending a little joy feels easy.</p>
+        <a class="text-link" href="#newsletter">A little more about us <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="story-photo" role="img" aria-label="Florist arranging seasonal flowers in the studio">
+        <span class="story-caption">the good stuff, growing</span>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-label="A note from a customer">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <blockquote>They arrived looking like a happy little garden. Honestly, the best kind of surprise.</blockquote>
+      <p>— Ananya, Chennai <span aria-label="five out of five stars">★★★★★</span></p>
+    </section>
+
+    <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter-flower" aria-hidden="true">✿</div>
+      <div>
+        <p class="eyebrow">Good things in your inbox</p>
+        <h2 id="newsletter-title">A fresh little <em>hello.</em></h2>
+        <p>Seasonal stems, small joys, and first dibs on the good bunches.</p>
+      </div>
+      <form class="newsletter-form" id="newsletter-form">
+        <label class="visually-hidden" for="newsletter-email">Your email address</label>
+        <input id="newsletter-email" name="email" type="email" placeholder="Your email address" required>
+        <button type="submit" aria-label="Sign up for the newsletter">Count me in <span aria-hidden="true">↗</span></button>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="wordmark wordmark-light" href="#home">poo<span>kadai</span><i aria-hidden="true">✿</i></a>
+        <p>A little joy, tied up<br>with a ribbon.</p>
+      </div>
+      <div class="footer-column"><h2>Come on in</h2><a href="#shop">Shop all flowers</a><a href="#occasions">Flowers by occasion</a><a href="#story">Our story</a></div>
+      <div class="footer-column"><h2>Here to help</h2><a href="mailto:hello@pookadai.in">Get in touch</a><a href="#newsletter">Delivery & FAQs</a><a href="#newsletter">Instagram ↗</a></div>
+      <div class="footer-note"><span aria-hidden="true">✳</span><p>Handpicked with love,<br>right here in Chennai.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> PooKadai Flowers</span><span>Made for the moments that matter.</span></div>
+  </footer>
+</body>
+</html>
